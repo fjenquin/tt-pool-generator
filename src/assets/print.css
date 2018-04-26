@@ -1,0 +1,71 @@
+@media print {
+  /* body {
+    overflow: auto;
+    height: auto;
+  } */
+
+  .layout {
+    display: block;
+  }
+
+  aside {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    padding: 0px !important ;
+  }
+
+  div.container {
+    padding: 0px !important ;
+  }
+
+  #navigation-toolbar {
+    display: none;
+  }
+
+  #navigation-drawer {
+    display: none;
+  }
+
+  #detailedSwitch {
+    display: none;
+  }
+
+  .player-list {
+    width: 70%;
+  }
+
+  .pool-ranking {
+    width: 30%;
+  }
+
+  div.page {
+    display: block;
+    page-break-after: always; 
+    page-break-before: always;
+    page-break-inside: avoid;
+  }
+
+  .pa-1 {
+    padding: 0px !important;
+  }
+
+  td {
+    height: 20px !important;
+  }
+
+  tr {
+    height: 20px !important;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px;
+  }
+}
