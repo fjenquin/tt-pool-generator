@@ -6,7 +6,7 @@
 
 import { getRankings } from '../services/PlayerService.js';
 
-const rankings =  getRankings();
+const rankings = getRankings();
 
 export default {
   props: ['player1Ranking', 'player2Ranking'],
@@ -18,7 +18,7 @@ export default {
       if (val < 0) {
         multiplier = -1;
       }
-      val = Math.floor(val + multiplier * 2);
+      val = Math.floor((val + multiplier) / 2);
       if (val * multiplier > 8) {
         val = multiplier * 8;
       }

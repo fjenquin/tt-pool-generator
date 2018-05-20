@@ -1,10 +1,11 @@
 export function shuffle(sourceArray) {
-  const array = [...sourceArray]
-  var m = array.length, t, i;
+  const array = [...sourceArray];
+  let m = array.length;
+  let t;
+  let i;
 
   // While there remain elements to shuffle…
   while (m) {
-
     // Pick a remaining element…
     i = Math.floor(Math.random() * m--);
 

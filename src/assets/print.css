@@ -1,71 +1,87 @@
 @media print {
-  /* body {
-    overflow: auto;
-    height: auto;
-  } */
-
-  .layout {
+  html,
+  body {
+    font-size: 8pt;
+  }
+  .app {
     display: block;
   }
-
+  .mdc-layout-app--toolbar-wrapper {
+    display: none !important;
+  }
   aside {
-    display: none;
+    display: none !important;
   }
-
   nav {
-    display: none;
+    display: none !important;
   }
-
   main {
-    padding: 0px !important ;
+    padding: 0px !important;
   }
-
   div.container {
-    padding: 0px !important ;
+    padding: 0px !important;
   }
-
-  #navigation-toolbar {
-    display: none;
-  }
-
-  #navigation-drawer {
-    display: none;
-  }
-
-  #detailedSwitch {
-    display: none;
-  }
-
   .player-list {
-    width: 70%;
+    width: 60% !important;
   }
-
+  .matches-list {
+    width: 100% !important;
+  }
   .pool-ranking {
-    width: 30%;
+    width: 50% !important;
   }
-
   div.page {
     display: block;
-    page-break-after: always; 
+    page-break-after: always;
     page-break-before: always;
     page-break-inside: avoid;
   }
-
   .pa-1 {
     padding: 0px !important;
   }
-
   td {
     height: 20px !important;
   }
-
   tr {
     height: 20px !important;
   }
-
-  .card {
-    border: none;
-    border-radius: 0px;
-    box-shadow: 0px;
+  .mdc-layout-app--content-wrapper {
+    background: white !important;
+  }
+  .mdc-card {
+    box-shadow: 0px 0px !important;
+  }
+  .mdc-layout-grid__inner {
+    display: block !important;
+  }
+  .mdc-fab {
+    display: none !important;
+  }
+  tr {
+    padding: 4px !important;
+  }
+  th {
+    padding: 4px !important;
+  }
+  td {
+    padding: 4px !important;
+  }
+  .small-column {
+    min-width: 15px;
+    max-width: 20px;
+    /* padding: 0px !important;
+    margin: 0px !important; */
+  }
+  .score {
+    min-width: 30px;
+    max-width: 40px;
+    /* padding: 0px !important;
+    margin: 0px !important; */
+  }
+  .w30 {
+    text-align: center;
+    width: 30px;
+    /* padding: 0px !important;
+    margin: 0px !important; */
   }
 }

@@ -7,7 +7,7 @@ export function cloneTournament(tournament) {
     ...tournament,
     poolConfig: { ...tournament.poolConfig },
     pools: { ...tournament.pools },
-  }
+  };
 }
 
 export function deleteTournament(tournament) {
